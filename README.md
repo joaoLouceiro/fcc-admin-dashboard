@@ -2,7 +2,7 @@
 
 #### Fullstack React and Next.js project
 
-- Based on [How to Build an Admin Dashboard with React](https://www.freecodecamp.org/news/build-admin-dashboard-react/)
+Based on [How to Build an Admin Dashboard with React](https://www.freecodecamp.org/news/build-admin-dashboard-react/)
 
 #### ⚡️ Requirements
 
