@@ -3,6 +3,7 @@
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import Avvvatars from "avvvatars-react";
 import { MenuIcon, ShieldCheckIcon, XIcon } from "lucide-react";
+import { Session } from "next-auth";
 import { signIn, signOut } from "next-auth/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -17,7 +18,11 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Navbar() {
+type Props = {
+  user: Session["user"];
+};
+
+export default function Navbar({ user }: Props) {
   const pathname = usePathname();
 
   return (
